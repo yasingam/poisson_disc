@@ -27,7 +27,7 @@ def poisson_disc(path, r, out_name):
         c = c[np.sqrt(((c[:, 0]-c[index][0])**2 + (c[:, 1]-c[index][1])**2))>r]
 
     out_image = Image.fromarray(new_image)
-    out_image.save('za.tif')
+    out_image.save(out_name)
 #r defines distance to sample from
 
 
