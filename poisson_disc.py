@@ -23,8 +23,8 @@ def poisson_disc(path, r, out_name):
     while (len(c)>0):
         index = random.randint(0, len(c)-1)
         new_image[c[index][0], c[index][1]] = image_array[c[index][0], c[index][1]]
-
-        c = c[np.sqrt(((c[:, 0]-c[index][0])**2 + (c[:, 1]-c[index][1])**2))>r]
+        dist_formula = np.sqrt(((c[:, 0]-c[index][0])**2 + (c[:, 1]-c[index][1])**2))
+        c = c[dist_formula>r]
 
     out_image = Image.fromarray(new_image)
     out_image.save(out_name)
