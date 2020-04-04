@@ -1,6 +1,6 @@
 # poisson_disc
 ## My implementation/s of Poisson disc sampling over an image
-![Alt text](/yasingam/poisson_disc/master/in.tif?raw=true "Optional Title")
+![Alt text](in.tif?raw=true "Optional Title")
 ### This literally just takes an image and make dots out of it spaces at least a minimum distance apart
 #### Yasin's Log 03/04/2020
 ##### poisson_disc.py added, language - python3
